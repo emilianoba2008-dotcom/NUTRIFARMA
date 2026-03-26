@@ -48,23 +48,22 @@
 
   <script src="script.js">
 
- const cards = document.querySelectorAll('.card');
+  const cards = document.querySelectorAll('.card');
 
-    cards.forEach(card => {
-      card.addEventListener('click', () => {
-       
-        cards.forEach(c => c.classList.remove('active'));
+  cards.forEach(card => {
+    card.addEventListener('click', () => {
 
-   
-        card.classList.add('active');
+      cards.forEach(c => c.classList.remove('active'));
 
-       
-        const modal = document.querySelector('.modal');
-        modal.style.display = 'flex';
 
-       
+      card.classList.add('active');
+
+
+      const modal = document.querySelector('.modal');
+      modal.style.display = 'flex';
+
       });
-            });
+    });
 </script>
 </body>
 </html>
