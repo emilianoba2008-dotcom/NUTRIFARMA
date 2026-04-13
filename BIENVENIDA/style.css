@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+body {
+  height: 100vh;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.app {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+.topbar {
+  height: 90px;
+  background: linear-gradient(180deg, #6e1f23, #7a2227);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  color: white;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 50px;
+}
+
+
+.brand span {
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.icons {
+  display: flex;
+  gap: 20px;
+  font-size: 22px;
+}
+
+/* CONTENIDO CENTRAL */
+.content {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background: #f7efe8;
+  background: url(nutrifarma.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.content h1 {
+  font-size: 60px;
+  color: #6e1f23;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 35px;
+  color: #6e1f23;
+}
+
+/* NAVBAR INFERIOR */
+.navbar {
+  height: 90px;
+  background: linear-gradient(180deg, #6e1f23, #7a2227);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  color: white;
+}
+
+.nav-item {
+  font-size: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+/* LÍNEA ACTIVA */
+.nav-item.active::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: white;
+  border-radius: 10px;
+}
